@@ -104,10 +104,10 @@
 	
 		  <!-- Side Actions  -->
 		  <div class="cp__side-widged cp__actions">
-			<button type="button" class="btn btn-red">PRE REVEAL</button>
+			<!-- <button type="button" class="btn btn-red">PRE REVEAL</button> -->
 			<button type="button" class="btn btn-blue">RAINBOW</button>
 			<button type="button" class="btn btn-dark --action --rules">RULES</button>
-			<button type="button" class="btn btn-dark __logout">LOGOUT</button>
+			<!-- <button type="button" class="btn btn-dark __logout">LOGOUT</button> -->
 		  </div>
 	
 		</div>
@@ -119,19 +119,13 @@
 		  <div class="cp__content-layout __top">
 			<div class="cp__bar">
 			  <div class="cp__bar-column">
-				<div class="cp__box">
-				  <div class="cp__box-title">Entries</div>
-				  <div class="cp__box-value">$0.11</div>
-				</div>
+				
 			  </div>
 			  <div class="cp__bar-column">
 				<img class="cp__bar __logo" src="./assets/img/logo-coin-play.png" alt="Coin&Play">
 			  </div>
 			  <div class="cp__bar-column">
-				<div class="cp__box">
-				  <div class="cp__box-title">Winnings</div>
-				  <div class="cp__box-value">$4.50</div>
-				</div>
+				
 			  </div>
 			</div>
 		  </div>
@@ -234,10 +228,7 @@
 				<button type="button" class="btn __direction --up" >UP</button>
 			  </div>
 			  <div class="cp__bar-column">
-				<div class="cp__box">
-				  <div class="cp__box-title">Internet time</div>
-				  <div class="cp__box-value">47:15</div>
-				</div>
+				<button type="button" class="btn __login --action --pin">LOGIN</button>
 			  </div>
 			  <div class="cp__bar-column">
 				<button type="button" class="btn __direction --down">DOWN</button>
@@ -249,121 +240,74 @@
 		<!-- ./Content  -->
 	
 	
-		<div class="cp__modal --modal --rules" style="display: none;">
-		  <div class="cp__modal-body">
+		<div class="cp__modal --modal --pin" style="display: none;">
+		  <div class="cp__modal-body --pin">
 			<div class="cp__modal-content">
-			  <div class="row m-0">
-				<div class="col p-1">
-				  <h2>Powerlevel + Cashback rules</h2>
+				<div class="cp__pin">
+					<img src="./assets/img/logo-coin-play.png" class="cp__pin-logo" alt="Coin to Play">
+					<h2 class="text-center">ENTER YOUR PIN</h2>
+					<input type="text" class="form-control cp__pin-input">
+					<div class="cp__pin-buttons">
+						<button type="button" class="cp__pin-button" data-value="1">1</button>
+						<button type="button" class="cp__pin-button" data-value="2">2</button>
+						<button type="button" class="cp__pin-button" data-value="3">3</button>
+						<button type="button" class="cp__pin-button" data-value="4">4</button>
+						<button type="button" class="cp__pin-button" data-value="5">5</button>
+						<button type="button" class="cp__pin-button" data-value="6">6</button>
+						<button type="button" class="cp__pin-button" data-value="7">7</button>
+						<button type="button" class="cp__pin-button" data-value="8">8</button>
+						<button type="button" class="cp__pin-button" data-value="9">9</button>
+						<button type="button" class="cp__pin-button __clear" data-value="CLEAR">CLEAR</button>
+						<button type="button" class="cp__pin-button" data-value="0">0</button>
+						<button type="button" class="cp__pin-button __enter" data-value="ENTER">ENTER</button>
+					</div>
 				</div>
-				<div class="col p-1 text-right">
-				  <button class="btn btn-success __action --action --rules" type="button">AGREE</button>
-				</div>
-			  </div>
-	
-			  <div class="cp__modal-text">
-				<h4>POWER LEVEL</h4>
-				<p>TO WELCOME YOU OUR CASINO REWARDS NEW PLAYERS WITH AMAZING BONUSES BASED ON A 6-LEVELS SCALE! WHAT YOU NEED TO DO IS PLAYING AT OUR CASINO AND YOU WILL IMMEDIATELY START FROM THE FIRST POWER LEVEL AMETHYST. THIS LEVEL WILL ALLOW YOU TO GET A 0.7% BONUS ON YOUR BETS. FOR ANY BET YOU WILL RECEIVE A 0.7% BONUS. BONUSES WILL BE CREDITED REAL-TIME IN THE ENTRIES CASHIER AND ONCE THE PAYOUT VALUE OF CR 50 IS REACHED, YOU WILL BE ABLE TO WITHDRAW THE AMOUNT AND REDEEM YOUR BONUS PERCENTAGE!
-				  FURTHERMORE INCREASING YOUR WINNINGS HAS NEVER BEEN SO EASY AND STRAIGHTFORWARD! IN ORDER TO REACH THE NEXT POWER LEVELS, YOU JUST NEED TO INCREASE YOUR WAGERING.</p>
-				<p>FOR EXAMPLE</p>
-				<div class="table-responsive mb-5">
-				  <table class="table">
-					<thead>
-					  <tr>
-						<td >LEVEL</td>
-						<td >BET FROM</td>
-						<td>BET TO</td>
-						<td>MIN.WITHDRAW</td>
-						<td>PERCENTAGE</td>
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr>
-						<td>AMETYST</td>
-						<td>CR 0</td>
-						<td>CR 3000</td>
-						<td>CR 5</td>
-						<td>0.8%</td>
-					  </tr>
-					  <tr>
-						<td>AMETYST</td>
-						<td>CR 0</td>
-						<td>CR 3000</td>
-						<td>CR 5</td>
-						<td>0.8%</td>
-					  </tr>
-					  <tr>
-						<td>AMETYST</td>
-						<td>CR 0</td>
-						<td>CR 3000</td>
-						<td>CR 5</td>
-						<td>0.8%</td>
-					  </tr>
-					  <tr>
-						<td>AMETYST</td>
-						<td>CR 0</td>
-						<td>CR 3000</td>
-						<td>CR 5</td>
-						<td>0.8%</td>
-					  </tr>
-					</tbody>
-				  </table>
-				</div>
-	
-				<h4>CASHBACK BONUS</h4>
-				<p>AND THAT'S NOT ALL! AN ADDITIONAL UNIQUE AND SPECIAL PROMOTIONS AWAITS YOU! UNLUCKY WEEK? NO PROBLEM, WE WILL REFUND YOU A PERCENTAGE OF YOUR BETS DIRECTLY TO YOUR ACCOUNT! THE CASH BACK BONUS IS AWARDED ON A WEEKLY BASIS DEPENDING ON YOUR LOSSES AND IT IS CREDITED TO THE ENTRIES CASHIER OF YOUR ACCOUNT, ACCORDING TO THE FOLLOWING FORMULA:
-				  WEEKLY LOSS (WEEKLY PLAYED- WEEKLY WON) - WEEKLY BONUS POWER LEVEL * 20% = CASH BACK BONUS.
-				  CASH BACK BONUS CAN BE WITHDRAWN ONCE THE MINIMUM PAYOUT VALUE IS REACHED, IN ACCORDANCE WITH THE POWER LEVELS SCALE.
-				</p>
-				<p>FOR EXAMPLE</p>
-				<div class="table-responsive">
-				  <table class="table">
-					<thead>
-					  <tr>
-						<td>PLAY</td>
-						<td>WIN</td>
-						<td>LOST</td>
-						<td>BONUS POWER LEVEL</td>
-						<td>CASHBACK</td>
-						<td>BONUS</td>
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr>
-						<td>CR 20000</td>
-						<td>CR 19000</td>
-						<td>CR 1000</td>
-						<td>CR 200</td>
-						<td>20%</td>
-						<td>CR 160</td>
-					  </tr>
-					</tbody>
-				  </table>
-				</div>
-	
-			  </div>
-	
-	
 			</div>
 			
 		  </div>
 		</div>
-		<div class="cp__modal cp__modal-overlay --modal --action --rules"  style="display: none;"></div>
+		<div class="cp__modal cp__modal-overlay --modal --action --pin" style="display: none;"></div>
 	
 	  </div>
 	  <script type="text/javascript" src="./assets/js/app.bundle.js"></script>
 	  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/webkul-micron/1.1.6/script/micron.min.js" integrity="sha512-yDEZvYWB3yjA8FJ82/7zAtiecXAHR+u3IXwBuq8NacGHB53vA0OzeKglUXYERI8Be0m4azoUivNPWuSBLcwtHg==" crossorigin="anonymous"></script>
 	  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	  <script src="https://paservices.website/js/jquery.autoscroll.js"></script>
+	  <script src="https://paservices.website/js/jquery.autoscroll.js  "></script>
 	
 	  <script>
 		$(document).ready(function() {
 	
-		  $(document).on('click', '.--action.--rules', function() {
-			$('.--modal.--rules').toggle();
+		  $(document).on('click', '.--action.--pin', function() {
+			$('.--modal.--pin').toggle();
 		  });
-	
+
+
+		  const pinInput = $('.cp__pin-input');
+
+		  $(document).on('click', '.cp__pin-button', function() {
+			
+				
+			if ($(this).data('value') === 'CLEAR') {
+				pinInput.val('')
+				micron.getEle(`[data-value="CLEAR"`).interaction("bounce").duration(".35");
+				return;
+			}
+
+			if ($(this).data('value') === 'ENTER') {
+				pinInput.val('')
+				micron.getEle(`[data-value="ENTER"`).interaction("bounce").duration(".35");
+				$('.--modal.--pin').toggle();
+				return;
+			}
+
+			if(pinInput.val().length < 4) {
+				pinInput.val(pinInput.val() + $(this).data('value'))
+				micron.getEle(`[data-value="${$(this).data('value')}"]`).interaction("bounce").duration(".35");
+			}
+
+		  });
+
 		});
 	  </script>
 	
