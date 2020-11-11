@@ -88,6 +88,12 @@ const path = require('path'),
       template: 'game.html',
       inject: false,
       chuncks:[]
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'jackpots.html',
+      template: 'jackpots.html',
+      inject: false,
+      chuncks:[]
     })
   ],
 };

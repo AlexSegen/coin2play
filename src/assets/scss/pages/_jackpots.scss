@@ -1,0 +1,311 @@
+.cp {
+
+    &__container {
+
+        &.__flex {
+            display: block;
+        }
+    }
+
+    &__content {
+        &.__alt {
+            background: #080516 url('../img/cp-bg-alt.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    
+    &__bjp {
+
+        &-container {
+            padding: 10px;
+            position: relative;
+
+            .boxes {
+
+                ul {
+                    display:block;
+                    width:100%;
+                    height:inherit;
+                    list-style-type:none;
+
+                    li {
+                        position:absolute;
+                        background:rgba(255,255,255,.2);
+                        transition: all ease-in-out 1s;
+                        animation: boxes-animation 15s linear 1s infinite;
+
+                        &:nth-child(1) {
+                          left:10%;
+                          height:30px;
+                          width:30px;
+                          animation-duration: 10s;
+                        }
+                        &:nth-child(2) {
+                          left:30%;
+                          height:45px;
+                          width:45px;
+                          animation-duration: 8s;
+                        }
+
+                        &:nth-child(3) {
+                          left:50%;
+                          height:70px;
+                          width:70px;
+                          animation-duration: 16s;
+                        }
+
+                        &:nth-child(4) {
+                          left:80%;
+                          height:40px;
+                          width:40px;
+                          animation-duration: 10s;
+                        }
+
+                        &:nth-child(5) {
+                            left:20%;
+                            height:35px;
+                            width:35px;
+                            animation-duration: 18s;
+                        }
+
+                        &:nth-child(6) {
+                            left:70%;
+                            height:45px;
+                            width:45px;
+                            animation-duration: 11s;
+                        }
+
+                        &:nth-child(7) {
+                            left:10%;
+                            height:30px;
+                            width:30px;
+                            animation-duration: 14s;
+                        }
+
+                        &:nth-child(8) {
+                            left:90%;
+                            height:35px;
+                            width:35px;
+                            animation-duration: 9s;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-header {
+            text-align: center;
+
+            span {
+                display: block;
+                font-size: 1.5rem;
+                margin: 10px 0 -11px;
+            }
+        }
+
+        &-title {
+            font-size: 4rem;
+            text-transform: uppercase;
+            line-height: 4rem;
+            margin: 0 0 50px;
+            text-align: center;
+            animation: jackpots 2s 0s ease infinite;
+            -moz-animation: jackpots 2s 0s ease infinite;
+            -webkit-animation: jackpots 2s 0s ease infinite;
+            -o-animation: jackpots 2s 0s ease infinite;
+        }
+
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &-item {
+            width: 90%;
+            height: auto;
+            margin: 50px auto;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            img {
+                display: block;
+                max-width: 90%;
+                height: auto;
+                margin: 0 auto;
+
+                &.__blue {
+                    -moz-animation: jp-animation-blue 1s 0s ease infinite;
+                    -webkit-animation: jp-animation-blue 1s 0s ease infinite;
+                    -o-animation: jp-animation-blue 1s 0s ease infinite;
+                }
+
+                &.__yellow {
+                    -moz-animation: jp-animation-yellow 1.2s 0s ease infinite;
+                    -webkit-animation: jp-animation-yellow 1.2s 0s ease infinite;
+                    -o-animation: jp-animation-yellow 1.2s 0s ease infinite;
+                }
+
+                &.__pink {
+                    -moz-animation: jp-animation-pink .6s 0s ease infinite;
+                    -webkit-animation: jp-animation-pink .6s 0s ease infinite;
+                    -o-animation: jp-animation-pink .6s 0s ease infinite;
+                }
+
+                &.__green {
+                    -moz-animation: jp-animation-green .9s 0s ease infinite;
+                    -webkit-animation: jp-animation-green .9s 0s ease infinite;
+                    -o-animation: jp-animation-green .9s 0s ease infinite;
+                }
+                
+                
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin: 0 0 -10px;
+                &.__blue {
+                    color: var(--blue);
+                }
+    
+                &.__pink {
+                    color: var(--pink);
+                }
+    
+                &.__green {
+                    color: var(--green);
+                }
+    
+                &.__yellow {
+                    color: var(--yellow);
+                }
+            }
+
+            p {
+                font-size: 4rem;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            > div {
+                width: 100%;
+            }
+
+    
+
+        }
+
+    }
+}
+
+@keyframes jackpots {
+    0%,
+    100% {
+    text-shadow: 
+    -.1vw 0vw .1vw #B3E5FC, -.15vw 0vw .2vw #B3E5FC, -.2vw 0vw .2vw #B3E5FC, 
+    -.1vw 0vw 3vw #03A9F4, -.2vw 0vw 3vw #03A9F4, -.4vw 0vw 3vw #03A9F4,
+    -.1vw 0vw 5vw #03A9F4, -.2vw 0vw 5vw #03A9F4, -.4vw 0vw .8vw #03A9F4, .2vw 0vw 10vw #03A9F4;
+      color: #B3E5FC;
+    }
+    50% {
+    text-shadow: 
+    -.1vw 0vw .1vw #1E88E5, -.15vw 0vw .2vw #1E88E5, -.2vw 0vw .2vw #1E88E5, 
+    -.1vw 0vw .1vw #1976D2, -.2vw 0vw .1vw #1976D2, -.4vw 0vw .1vw #1976D2,
+    -.1vw 0vw .2vw #1976D2, -.2vw 0vw .2vw #1976D2, -.4vw 0vw .2vw #1976D2, .2vw 0vw .5vw #1976D2;
+      color: #1E88E5;
+    }
+  }
+
+  @keyframes boxes-animation {
+    from {
+      transform: translateY(+1500%) rotate(180deg)
+    }
+    to {
+      transform: translateY(-250%)
+        rotate(360deg)
+    }
+  }
+
+  @keyframes jp-animation-blue {
+      0%,
+      100% {
+        background-image: radial-gradient($blue, transparent 0%);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      50% {
+        background-image: radial-gradient($blue, transparent 70%);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  }
+  @keyframes jp-animation-blue {
+    0%,
+    100% {
+      background-image: radial-gradient($blue, transparent 0%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    50% {
+      background-image: radial-gradient($blue, transparent 70%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+}
+@keyframes jp-animation-pink {
+    0%,
+    100% {
+      background-image: radial-gradient($pink, transparent 0%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    50% {
+      background-image: radial-gradient($pink, transparent 70%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+}
+@keyframes jp-animation-yellow {
+    0%,
+    100% {
+      background-image: radial-gradient($yellow, transparent 0%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    50% {
+      background-image: radial-gradient($yellow, transparent 70%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+}
+@keyframes jp-animation-green {
+    0%,
+    100% {
+      background-image: radial-gradient($green, transparent 0%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    50% {
+      background-image: radial-gradient($green, transparent 70%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+}
