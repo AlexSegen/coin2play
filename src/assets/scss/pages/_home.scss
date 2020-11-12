@@ -9,8 +9,6 @@ body {
     min-height: 100vh;
     background: linear-gradient(to bottom, #8120E2, #21033f);
 
-    
-
     @media(max-width: 1366px) {
         padding: 10px 30px;
     }
@@ -233,6 +231,7 @@ body {
                 }
             }
 
+            .__purchase,
             .__login {
                 width: 100%;
                 display: block;
@@ -244,7 +243,7 @@ body {
                 text-transform: uppercase;
                 background: #007bff;
                 background: linear-gradient(to bottom,#007bff, #003c7d);
-                box-shadow: 0 15px 15px rgba($color: #007bff, $alpha: 0.3);
+                box-shadow: 0 10px 15px rgba($color: #007bff, $alpha: 0.3);
                 transition: all ease-in-out .1s;
     
                 &:hover, &:focus, &:action {
